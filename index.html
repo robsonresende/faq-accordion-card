@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+    
+
+  <div class="card">
+
+    <div class="col-2 lg-img">
+
+      <div class="shadow">
+        <img src="images/bg-pattern-desktop.svg" alt="sombra" class="sombra">
+      </div>
+
+      <div class="img-fluid">
+        <img src="images/illustration-woman-online-desktop.svg" align="mulher online">
+      </div>
+
+      <div class="caixa">
+      <img src="images/illustration-box-desktop.svg" alt="caixa" class="caixa">   
+      </div> 
+
+    </div><!-- end div col-2  lg-img -->
+
+    <div class="col-2" id="sm-img">
+      <img src="images/bg-pattern-mobile.svg" alt="sombra da mulher online">
+      <img src="images/illustration-woman-online-mobile.svg" alt="mulher online" class="on-woman">
+    </div>
+
+    <div class="faq col-2">
+
+    <h1>FAQ</h1>
+
+      <div class="faq-container">
+        <input type="checkbox" id="toggle-1" class="dot"><label for="toggle-1"><p class="std">How many team members can I invite?<img src="images/icon-arrow-down.svg"></p></label>
+
+        <div class="slider">
+          <p class="std">
+            You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
+          </p>
+        </div><!-- end div class slider -->
+      </div><!-- end div faq-container -->
+
+      <div class="faq-container">
+        <input type="checkbox" id="toggle-2" class="dot"><label for="toggle-2"><p class="std">What is the maximum file upload size?<img src="images/icon-arrow-down.svg"></p></label>
+
+        <div class="slider">
+          <p class="std">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </div><!-- end div class slider -->        
+      </div><!-- end div faq-container -->
+
+      <div class="faq-container">
+        <input type="checkbox" id="toggle-3" class="dot"><label for="toggle-3"><p class="std">How do I reset my password?<img src="images/icon-arrow-down.svg"></p></label>
+
+        <div class="slider">
+          <p class="std">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
+        </div><!-- end div class slider -->        
+      </div><!-- end div faq-container -->
+
+      <div class="faq-container">
+        <input type="checkbox" id="toggle-4" class="dot"><label for="toggle-4"><p class="std">Can I cancel my subscription?<img src="images/icon-arrow-down.svg"></p></label>
+
+        <div class="slider">
+          <p class="std">
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+        </div><!-- end div class slider -->        
+      </div><!-- end div faq-container -->
+
+
+      <div class="faq-container">
+        <input type="checkbox" id="toggle-5" class="dot"><label for="toggle-5"><p class="std">Do you provide additional support?<img src="images/icon-arrow-down.svg"></p></label>
+
+        <div class="slider">
+          <p class="std">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </div><!-- end div class slider -->        
+      </div><!-- end div faq-container -->   
+
+    </div><!-- and div faq col-2 -->
+
+  </div><!-- end div card -->
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://robsonresende.github.io/">Robson Resende</a>.
+  </footer>
+</body>
+</html>

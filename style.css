@@ -1,0 +1,183 @@
+/*
+desktop: 1440px
+mobile: 
+*/
+
+:root {
+	/* primary text */
+	--vddblue: hsl(238, 29%, 16%);/* very dark dessaturated blue */
+	--softred: hsl(14, 88%, 65%);/* soft red */
+
+	/* neutral text */
+	--vdgblue: hsl(237, 12%, 33%);/* very dark grayish blue */
+	--dgblue: hsl(240, 6%, 50%);/* dark grayish blue */
+
+	/* dividers */
+	--lgblue: hsl(240, 5%, 91%);/* light grayish blue */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	min-height: 100vh;
+	font-family: 'Kumbh Sans', sans-serif;
+	background-color: #ffffff;
+	background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+	background-repeat: no-repeat;
+	color: var(--vddblue);
+	/* align faq-container center */
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center
+}
+
+
+/* card configurations */
+.card {
+	background-color: #ffffff;
+	width: 80%;
+	border-radius: 20px;
+	margin-top: 80px;
+}
+
+
+.col-2 {
+	width: 45%;
+	float: left;
+	position: relative;
+}
+
+/* desktop images configurations */
+.caixa {
+	position: absolute;
+	top: 100px;
+	left: -40px;
+
+	
+}
+
+.img-fluid {
+	position: absolute;
+	top: 50px;
+	left: -50px;
+}
+
+.shadow {
+	transform: translate(-50px, 0);
+}
+
+.sombra {
+	max-width: 500px;
+}
+
+
+/* img-mobile configurations */
+#sm-img {
+	visibility: hidden;
+	max-height: 0;
+}
+
+/* FAQ classes configurations */
+.faq-container {
+	border-bottom: var(--lgblue) 2px dotted;
+}
+
+
+.faq {
+	background-color: transparent;
+	margin-top: 3em;
+	padding-left: 2em;
+	width: 40%
+}
+
+
+
+
+/* dropdown configurations */
+.dot {
+	display: none;
+}
+
+label {
+	display: block !important;
+	cursor: pointer;
+}
+
+label:hover {
+	color: var(--softred);
+}
+
+p img {
+	float: right;
+}
+
+.slider {
+	overflow: hidden;
+	max-height: 0;
+	color: var(--dgblue);
+}
+
+input:checked+label {}
+
+input:checked+label+.slider {
+	overflow: hidden;
+	max-height: 500px;
+}
+
+/* footer configurations */
+.attribution {
+	padding-top: 3em;
+	padding-bottom: 3em;
+	width: 100%;
+}
+
+@media (max-width: 1220px) {
+
+	h1 {
+		text-align: center;
+		margin-bottom: 1.5em;
+		width: 93%;
+	}
+
+	#sm-img {
+		visibility: visible;
+		max-height: 800px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.lg-img {
+		visibility: hidden;
+		max-height: 0px;
+	}
+
+	.card {
+		width: 376px;
+		margin-top: 130px;
+		padding-bottom: 3em;
+	}
+
+	.col-2 {
+		width: 90%;
+	}
+
+	.attribution {
+		clear: both;
+	}
+
+	.on-woman {
+		position: absolute;
+		top: -100px;
+		left: 40px;
+	}
+
+	.faq-container{	
+		width: 93%;
+	}
+
+}
